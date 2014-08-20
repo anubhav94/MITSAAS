@@ -49,6 +49,11 @@
   -ms-transition:all 0.2s linear;
   -o-transition:all 0.2s linear;
   transition:all 0.2s linear;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
 }
 
 /*#slide .mask:hover .images .img img{
