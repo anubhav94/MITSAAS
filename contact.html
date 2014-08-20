@@ -5,17 +5,6 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
 </head>
 
-<script type="text/javascript">
-function sendEmail(){
-    var name = document.getElementById("name").value;
-    var subject = document.getElementById("subject").value;
-    var message = document.getElementById("message").value;
-    var url = "email_message.py?name=" + name + "&subject=" + subject + "&message=" + message;
-    xmlhttp.open("POST", url, false);
-    xmlhttp.send();
-}
-</script>
-
 <html>
     <body>
         <div class="transbox">

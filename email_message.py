@@ -10,7 +10,7 @@ import urlparse
 PORT = 8000
 
 
-def send_email(fromaddr, sub, body):
+def send_email(fromaddr, subject, message):
     user = 'mitsaasboard'
     passw = 'ramsdick'
 
@@ -24,14 +24,14 @@ def send_email(fromaddr, sub, body):
     tolist = ['saas@mit.edu', fromaddr]
 
     print "From address :", fromaddr
-    print "Subject :", sub
-    print "Body :", body
+    print "Subject :", subject
+    print "Message :", message
 
     msg = email.MIMEMultipart.MIMEMultipart()
     msg['From'] = fromaddr
     msg['To'] = email.Utils.COMMASPACE.join(tolist)
-    msg['Subject'] = sub
-    msg.attach(MIMEText(body))
+    msg['Subject'] = subject
+    msg.attach(MIMEText(message))
     msg.attach(MIMEText('\nSent from saas.mit.edu', 'plain'))
     server.sendmail(user, tolist, msg.as_string())
 
@@ -40,14 +40,21 @@ class ServerHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 
     def do_GET(self):
         print self.path
-        if self.path == "/email_message.py":
+        if self.path.startswith('/email_message.py'):
             # This check required to make sure no one can see this file
             return
         if self.path.startswith('/contact.html?'):
             path = self.path[14:]
             params = urlparse.parse_qs(path)
-            send_email(
-                params['from'][0], params['subject'][0], params['message'][0])
+            fromaddr = params.get('from', None)
+            subject = params.get('subject', None)
+            message = params.get('message', None)
+            if fromaddr and subject and message:
+                # Number of each of these parameters should only be 1
+                fromaddr = fromaddr[0]
+                subject = subject[0]
+                message = message[0]
+                send_email(fromaddr, subject, message)
 
         SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
