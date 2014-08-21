@@ -119,29 +119,15 @@ body {
   background-color: #EEEEE0;
 }
 
-div.contactbox {
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
 body {
-    font-size: 25px;
-    font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
-}
-
-h2 {
-    font-size: 40px;
-    font-family: Gill Sans / Gill Sans MT, sans-serif;
-    color: rgb(100, 6, 6);
-}
-
-div.contacttext {
-    color: rgb(100, 6, 6);
+  font-size: 25px;
+  font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
 }
 
 textarea {
-    font-size: 15px;
-    font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+  font-size: 15px;
+  font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+  border-radius: 10px;
 }
 
 .contactinputbox {
@@ -152,6 +138,11 @@ textarea {
 footer {
     border-top:rgb(220, 220, 220) 3px solid;
     color: rgb(100, 6, 6);
+}
+
+.pure-form {
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 
