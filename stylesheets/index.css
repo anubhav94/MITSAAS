@@ -28,11 +28,11 @@ body {
   font-weight: 100;
 }
 
-#about a{
+.content a{
   text-decoration: none;
 }
 
-#about a:hover{
+.content a:hover{
   color: rgb(100, 6, 6);
 }
 
@@ -142,6 +142,10 @@ footer {
 .pure-form {
   margin-left: 3%;
   margin-right: 3%;
+}
+
+.pure-button {
+  float: right;
 }
 
 div.marginbox {
