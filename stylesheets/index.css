@@ -60,6 +60,9 @@ body {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   transition: all 500ms;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .picture:hover .circular {
