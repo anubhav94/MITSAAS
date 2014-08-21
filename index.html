@@ -160,21 +160,18 @@
         <form action="/cgi/email_message.py" method="get" enctype="text/plain" class ="pure-form pure-form-stacked">
           <fieldset>
 
-            <div class="pure-g">
-              <div class="pure-u-1-2 pure-u-md-1-3">
-                <input class="contactinputbox" name='from' id="name" type="text" placeholder="Email" style="border-radius: 10px;">
+            <div>
+              <div>
+                <input class="contactinputbox" name='from' id="name" type="text" placeholder="Email" style="border-radius: 10px;"/>
+                <input class="contactinputbox" name='subject' id="subject" type="text" placeholder="Subject" style="border-radius: 10px;"/>
               </div>
-
-              <div class="pure-u-1-2 pure-u-md-1-3">
-                <input class="contactinputbox" name='subject' id="subject" type="text" placeholder="Subject" style="border-radius: 10px;">
-              </div> <br>
-
-              <textarea class="contactinputbox" name='message' id="message" cols="83%" rows="8" placeholder="Message" style="border-radius: 10px;"></textarea>
+              <br>
+              <textarea class="contactinputbox" name='message' id="message" cols="83%" rows="8" placeholder="Message" style="width: 100%; border-radius: 10px;"></textarea>
 
             </div>
             <br> <br>
 
-            <button type="submit" class="pure-button pure-button-primary" style="background: rgb(100, 6, 6); border-radius: 10px;">submit >></button>
+            <button type="submit" class="pure-button pure-button-primary" style="float: right; font-size: 24px; font-weight: 100; background: rgb(100, 6, 6); border-radius: 10px;">submit >></button>
             <br> <br> <br>
           </fieldset>
         </form>
