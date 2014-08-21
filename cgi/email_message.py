@@ -12,6 +12,7 @@ import email
 print "Content-type: text/html"
 print
 
+
 def send_email(fromaddr, subject, message):
     user = 'mitsaasboard'
     passw = 'ramsdick'
@@ -23,7 +24,7 @@ def send_email(fromaddr, subject, message):
     server.ehlo()
     server.starttls()
     server.login(user, passw)
-    tolist = ['deepakn@mit.edu', fromaddr]
+    tolist = ['saas@mit.edu', fromaddr]
 
     msg = email.MIMEMultipart.MIMEMultipart()
     msg['From'] = fromaddr
