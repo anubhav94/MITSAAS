@@ -51,25 +51,49 @@
 }
 
 #cover2 {
-    background: url(../assets/Cover2.jpg);
+    /*background: url(../assets/Cover2.jpg);*/
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 59%, rgba(0,0,0,0.8) 100%), url(../assets/Cover2.jpg) no-repeat;
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover2.jpg) no-repeat;
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover2.jpg) no-repeat;
+    background: -ms-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover2.jpg) no-repeat;
+    background: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover2.jpg) no-repeat;
+
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #cover3 {
-    background: url(../assets/Cover3.jpg);
+    /*background: url(../assets/Cover3.jpg);*/
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 59%, rgba(0,0,0,0.8) 100%), url(../assets/Cover3.jpg) no-repeat;
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover3.jpg) no-repeat;
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover3.jpg) no-repeat;
+    background: -ms-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover3.jpg) no-repeat;
+    background: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover3.jpg) no-repeat;
+
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #cover4 {
-    background: url(../assets/Cover4.jpg);
+    /*background: url(../assets/Cover4.jpg);*/
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 59%, rgba(0,0,0,0.8) 100%), url(../assets/Cover4.jpg) no-repeat;
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover4.jpg) no-repeat;
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover4.jpg) no-repeat;
+    background: -ms-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover4.jpg) no-repeat;
+    background: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover4.jpg) no-repeat;
+
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #cover5 {
-    background: url(../assets/Cover5.jpg);
+    /*background: url(../assets/Cover5.jpg);*/
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 59%, rgba(0,0,0,0.8) 100%), url(../assets/Cover5.jpg) no-repeat;
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover5.jpg) no-repeat;
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover5.jpg) no-repeat;
+    background: -ms-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover5.jpg) no-repeat;
+    background: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.8) 100%), url(../assets/Cover5.jpg) no-repeat;
+
     background-size: cover;
     background-repeat: no-repeat;
 }
