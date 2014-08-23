@@ -173,10 +173,10 @@ div.eventbox {
     ACCORDION
 \*------------------------------------*/
 .accordion {
-    height:1200px;
     width:46%;
     overflow:hidden;
     list-style:none;
+    margin-left: 3%;
     margin-bottom:10px;
     text-shadow:1px 1px 1px rgba(0,0,0,0.25);
 
@@ -186,7 +186,7 @@ div.eventbox {
     border-radius:10px;
     float: left;
 }
-.accordion li {
+/*.accordion li {
     float:none;
     height:20%;
     width:100%;
@@ -234,4 +234,4 @@ li:hover .eventdesc {
     -webkit-transition-delay:0.3s;
     -o-transition-delay:0.3s;
     transition-delay:0.3s;
-}
+}*/
