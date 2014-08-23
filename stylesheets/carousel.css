@@ -3,3 +3,14 @@
     position: absolute;
     bottom: 0px;
 }
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
