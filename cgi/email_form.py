@@ -1,26 +1,18 @@
 #!/usr/bin/env python
 
-#---------------------------------------------------------------------
-# Import the necessary module.
-#---------------------------------------------------------------------
 import CaptchasDotNet
 
 #---------------------------------------------------------------------
-# Construct the captchas object. Replace the required parameters
-# 'demo' and 'secret' with the values you receive upon
-# registration at http://captchas.net.
+# Construct the captchas object.
 #
 # Optional Parameters and Defaults:
 #
 # alphabet: 'abcdefghkmnopqrstuvwxyz' (Used characters in captcha)
-# We recommend alphabet without mistakable ijl.
 #
 # letters: '6' (Number of characters in captcha)
 #
 # width: '240' (image width)
 # height: '80' (image height)
-#
-# Don't forget the same settings in check.cgi
 #---------------------------------------------------------------------
 captchas = CaptchasDotNet.CaptchasDotNet(
     client='mitsaaas',

@@ -14,6 +14,18 @@ import re
 print "Content-type: text/html"
 print
 
+#---------------------------------------------------------------------
+# Construct the captchas object.
+#
+# Optional Parameters and Defaults:
+#
+# alphabet: 'abcdefghkmnopqrstuvwxyz' (Used characters in captcha)
+#
+# letters: '6' (Number of characters in captcha)
+#
+# width: '240' (image width)
+# height: '80' (image height)
+#---------------------------------------------------------------------
 captchas = CaptchasDotNet.CaptchasDotNet(
     client='mitsaaas',
     secret='b7Oi0pAbWVT76mJujsuyruGRFynXb1AGaBcxGuhk'
