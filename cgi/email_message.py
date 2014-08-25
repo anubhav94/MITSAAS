@@ -2,6 +2,7 @@
 
 
 import sys
+import CaptchasDotNet
 sys.stderr = sys.stdout
 from cgi import FieldStorage
 
@@ -12,6 +13,11 @@ import re
 
 print "Content-type: text/html"
 print
+
+captchas = CaptchasDotNet.CaptchasDotNet(
+    client='mitsaaas',
+    secret='b7Oi0pAbWVT76mJujsuyruGRFynXb1AGaBcxGuhk'
+)
 
 
 def send_email(fromaddr, subject, message):
@@ -42,7 +48,7 @@ def verify_email(email):
     return True
 
 f = FieldStorage()
-fromaddr = message = subject = None
+fromaddr = message = subject = captcha = random_string = None
 error_msg = "Looks like you have a missing field or two!"
 if "from" in f:
     fromaddr = f["from"].value
@@ -53,12 +59,25 @@ if "message" in f:
     message = f["message"].value
 if "subject" in f:
     subject = f["subject"].value
+if "captcha" in f:
+    captcha = f["captcha"].value
+if "random" in f:
+    random_string = f["random"].value
 
 if fromaddr and message and subject:
-    # Success page
-    send_email(fromaddr, subject, message)
-    f = open('thank_you.html')
-    print f.read()
+    captchas.validate(random_string)
+    if captcha and captchas.verify(captcha):
+        # Success page
+        send_email(fromaddr, subject, message)
+        f = open('thank_you.html')
+        print f.read()
+    else:
+        # Rejection page
+        error_msg = "Oops, looks like the captcha code you entered is incorrect!"
+        f = open('oops.html')
+        html = f.read()
+        html = html.format(error_msg)
+        print html
 else:
     # Rejection page
     f = open('oops.html')
