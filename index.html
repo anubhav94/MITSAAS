@@ -4,8 +4,6 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/carousel.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
       $(function() {
@@ -32,7 +30,7 @@
         <a href='#about'>about</a>
         <a href='#events'>events</a>
         <a href='#join'>join</a>
-        <a href='#contact'>contact</a>
+        <a href='/cgi/email_form.py'>contact</a>
         <a href='#'>gallery</a>
       </div>
 
@@ -339,40 +337,6 @@
       <br>
       You can join SAAS at any of our events throughout the year - registration is quick and simple. Please email saas@mit.edu with any questions.
       </div>
-    </div>
-
-    <div id='contact'>
-      <div class="contactbox">
-        <div class='heading'>Keeping in Touch</div>
-        <div class="content">
-          Visit us on Facebook! Join <a href="https://www.facebook.com/groups/mitsaas/">our Facebook group</a> to stay updated and show your support for MIT SAAS. Email us at saas@mit.edu with any questions.
-        </div>
-        <form action="/cgi/email_message.py" method="get" enctype="text/plain" class ="pure-form pure-form-stacked">
-          <fieldset>
-
-            <div>
-              <div style='display: inline-block'>
-                <input class="contactinputbox" name='from' id="name" type="text" placeholder="Email" style="border-radius: 10px;"/>
-                <input class="contactinputbox" name='subject' id="subject" type="text" placeholder="Subject" style="border-radius: 10px;"/>
-              </div>
-              <br>
-              <textarea class="contactinputbox" name='message' id="message" cols="83%" rows="8" placeholder="Message" style="width: 100%; border-radius: 10px;"></textarea>
-
-            </div>
-            <br> <br>
-
-            <button type="submit" class="pure-button pure-button-primary" style="float: right; font-size: 24px; font-weight: 100; background: rgb(100, 6, 6); border-radius: 10px;">submit >></button>
-            <br> <br> <br>
-          </fieldset>
-        </form>
-        <footer style="margin-bottom: 20px;">
-          <center>
-            <br>
-            &#169; MIT SAAS 2014 | saas@mit.edu
-          </center>
-        </footer>
-      </div>
-
     </div>
 
 
